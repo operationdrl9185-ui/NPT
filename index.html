@@ -3,18 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NPT Data Entry</title>
+    <title>NPT Data Entry | এনপিটি ডাটা এন্ট্রি</title>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
-        html, body { width:100%; height:100%; overflow:hidden; background:#f0f4f8; }
-        iframe { width:100%; height:100%; border:none; display:block; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #f0f4f8;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        /* Fallback link if iframe fails */
+        .fallback {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        .fallback a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 24px;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
     <iframe 
-        src="https://script.google.com/macros/s/AKfycby7zp2I4KPnBV94Pdxv-CzCih75PLJqYFr-b3QLSy5q0OPlEyRLHQNDOBIVdMxWWJ3v/exec"
+        src="https://script.google.com/macros/s/AKfycbzOqPpMnXugTQod5R9u7OONJdS-t8rOfATthRgtHQ_EKrj79sdR53Uqd2Q3R-fX9u5b/exec"
         title="NPT Data Entry Form"
         allowfullscreen
+        loading="eager"
     ></iframe>
+
+    <div class="fallback">
+        ফর্মটি লোড হচ্ছে না?  
+        <a href="https://script.google.com/macros/s/AKfycbzOqPpMnXugTQod5R9u7OONJdS-t8rOfATthRgtHQ_EKrj79sdR53Uqd2Q3R-fX9u5b/exec" target="_blank">সরাসরি খুলুন</a>
+    </div>
+
+    <script>
+        // Optional: Detect if iframe fails to load after 5 seconds
+        setTimeout(function() {
+            const iframe = document.querySelector('iframe');
+            // If iframe content is blank or error (can't directly detect cross-origin), show fallback
+            // This is a simple visual fallback; you can adjust as needed.
+            if (navigator.onLine === false) {
+                document.querySelector('.fallback').style.display = 'block';
+                iframe.style.display = 'none';
+            }
+        }, 5000);
+    </script>
 </body>
 </html>
