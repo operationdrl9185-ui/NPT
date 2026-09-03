@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NPT Data Entry | এনপিটি ডাটা এন্ট্রি</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #f0f4f8;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        /* Fallback for very old browsers */
+        .fallback {
+            display: none;
+            text-align: center;
+            padding: 30px;
+            font-size: 18px;
+            color: #333;
+        }
+        @media (max-width: 480px) {
+            iframe {
+                height: 100%;
+                /* Ensure no scrolling issues */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main app iframe -->
+    <iframe 
+        src="https://script.google.com/macros/s/AKfycbzCTnan0U1qQXuxfGZNNEiDVlRwtJrdeuIPe2gcVPrdTcxihs1Uq7tvp7zr7Vy33bDt/exec"
+        title="NPT Data Entry Form"
+        allowfullscreen
+        loading="eager"
+    ></iframe>
+
+    <!-- Fallback message (if iframe fails) -->
+    <div class="fallback">
+        আপনার ব্রাউজার iframe সাপোর্ট করে না।  
+        <a href="https://script.google.com/macros/s/AKfycbzCTnan0U1qQXuxfGZNNEiDVlRwtJrdeuIPe2gcVPrdTcxihs1Uq7tvp7zr7Vy33bDt/exec" target="_blank">
+            সরাসরি ফর্ম খুলুন
+        </a>
+    </div>
+</body>
+</html>
