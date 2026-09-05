@@ -43,9 +43,9 @@
     </style>
 </head>
 <body>
-    <!-- নতুন Apps Script URL -->
+    <!-- আপনার Apps Script URL -->
     <iframe 
-        src="https://script.google.com/macros/s/AKfycbyz_OTEJzSRGVai-A_fGE9_HvYDEmhc39Q1a0FwyzUoc1Xc1UAfVgREzY53ZtjoUNKk/exec"
+        src="https://script.google.com/macros/s/AKfycbzXBP-U4miD3Snt_71FrMVP2sO5HGkCXbnL86E6KL4T_uy_Qfpfi9mk2IUUGoh3HTnW/exec"
         title="NPT Data Entry Form"
         allowfullscreen
         loading="eager"
@@ -53,12 +53,13 @@
 
     <div class="fallback" id="fallbackMessage">
         ফর্মটি লোড হচ্ছে না?  
-        <a href="https://script.google.com/macros/s/AKfycbyz_OTEJzSRGVai-A_fGE9_HvYDEmhc39Q1a0FwyzUoc1Xc1UAfVgREzY53ZtjoUNKk/exec" target="_blank">
+        <a href="https://script.google.com/macros/s/AKfycbzXBP-U4miD3Snt_71FrMVP2sO5HGkCXbnL86E6KL4T_uy_Qfpfi9mk2IUUGoh3HTnW/exec" target="_blank">
             সরাসরি খুলুন
         </a>
     </div>
 
     <script>
+        // যদি iframe লোড না হয় (সাধারণত নেটওয়ার্ক সমস্যা) তাহলে fallback দেখাবে
         window.addEventListener('load', function() {
             const iframe = document.querySelector('iframe');
             setTimeout(function() {
